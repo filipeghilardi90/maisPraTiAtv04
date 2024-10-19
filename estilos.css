@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header .logo img {
+    height: 150px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header .cta {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: #aaa7a7;
+    color: #d8cbcb;
+  }
+  .swiper-slide img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar todo o espaço do slide */
+    height: 100%; /* Mantém a proporção da imagem */
+  }
+  #sobre, #servicos, #testemunhos, #contato {
+    padding: 50px 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  /* Media Queries para Responsividade */
+
+  #contato {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+form {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: column; /* Colocar os elementos em coluna */
+}
+
+input, textarea {
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input:focus, textarea:focus {
+    border-color: #007aff; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    padding: 15px; /* Espaçamento interno */
+    background-color: #007aff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+.whatsapp {
+  display: flex; /* Para centralizar o ícone */
+  align-items: center; /* Alinha verticalmente */
+  margin-left: 20px; /* Espaçamento à esquerda do ícone */
+}
+
+.whatsapp-icon {
+  width: 50px; /* Largura do ícone */
+  height: 50px; /* Altura do ícone */
+  transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header nav ul {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  header nav ul li {
+      margin: 5px 0;
+  }
+
+  .cta-button {
+      margin-top: 10px;
+  }
+
+  #banner {
+      height: 200px;
+  }
+
+  .swiper-slide {
+      font-size: 20px;
+  }
+
+  section {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+      font-size: 18px;
+  }
+
+  section {
+      padding: 15px;
+  }
+
+  footer {
+      font-size: 14px;
+  }
+}
+/* o novo */
+.menu-toggle {
+  display: none; /* Esconde o botão do menu por padrão */
+  flex-direction: column; /* Coloca as barras em coluna */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+.bar {
+  height: 3px; /* Altura das barras */
+  width: 25px; /* Largura das barras */
+  background-color: #fff; /* Cor das barras */
+  margin: 3px 0; /* Espaçamento entre as barras */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Alinha os itens em coluna */
+      align-items: flex-start; /* Alinha à esquerda */
+  }
+
+  header nav ul {
+      display: none; /* Esconde o menu por padrão em dispositivos móveis */
+      flex-direction: column; /* Coloca os itens do menu em coluna */
+      padding: 10px 0; /* Espaçamento interno */
+      width: 100%; /* Largura total */
+      background-color: #333; /* Cor de fundo do menu */
+  }
+
+  header nav ul.active {
+      display: flex; /* Exibe o menu quando ativo */
+  }
+
+  header nav ul li {
+      margin: 5px 0; /* Espaçamento entre os itens do menu */
+  }
+
+  .menu-toggle {
+      display: flex; /* Exibe o botão do menu em dispositivos móveis */
+  }
+}
+.social-links {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones */
+  gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-icon {
+  width: 50px; /* Largura dos ícones */
+  height: 50px; /* Altura dos ícones */
+  transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+/*  alterei aqui */
+
+#servicos {
+  padding: 50px 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex; /* Usar flexbox para layout */
+  align-items: center; /* Alinha verticalmente */
+}
+
+.servicos-container {
+  display: flex; /* Exibe a imagem e o texto lado a lado */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  width: 100%; /* Largura total */
+}
+
+.servicos-imagem {
+  flex: 1; /* A imagem ocupa 1 parte do espaço */
+  margin-right: 20px; /* Espaçamento à direita da imagem */
+}
+
+.servicos-img {
+  width: 100%; /* A imagem ocupa toda a largura do contêiner */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+.servicos-texto {
+  flex: 2; /* O texto ocupa 2 partes do espaço */
+}
+
+.servicos-texto p {
+  margin: 10px 0; /* Espaçamento entre os parágrafos */
+}
