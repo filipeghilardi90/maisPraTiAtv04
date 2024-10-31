@@ -89,10 +89,13 @@
     <section id="contato">
       <h2>Contato</h2>
       <form id="contact-form">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="telefone" placeholder="Telefone" required>
-        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+        <input type="text" id="name" name="from_name" placeholder="Seu Nome" required>
+        <input type="email" id="email" name="from_email" placeholder="Seu Email" required>
+       
+        
+        <input type="tel" id="telefone" name="from_telefone" placeholder="Seu Telefone" required>
+        
+        <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
         <button type="submit">Enviar</button>
       </form>
     </section>
@@ -117,7 +120,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script  src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
   <script src="scripts.js"></script>
 </body>
 </html>

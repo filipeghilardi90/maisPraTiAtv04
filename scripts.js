@@ -70,21 +70,23 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(error => console.error('Erro ao carregar os depoimentos:', error));
 
   // Validação de formulário
+  emailjs.init("tXXX-JQ7HzFBIE5Gx"); 
+
   const form = document.getElementById('contact-form');
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     // Validação básica
     if (form.checkValidity()) {
       // Enviar dados via EmailJS
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+      emailjs.sendForm('service_snogihq', 'template_ykn0tmu', form)
         .then(function () {
-          console.log('Formulário válido e enviado!');
+          alert('E-mail enviado com sucesso!');
           form.reset(); // Opcional: Limpa o formulário após o envio
         }, function (error) {
-          console.log('Erro ao enviar o formulário: ', error);
+          alert('Erro ao enviar o formulário: ', error);
         });
     } else {
-      console.log('Por favor, preencha todos os campos obrigatórios.');
+      alert('Por favor, preencha todos os campos obrigatórios.');
     }
   });
 
